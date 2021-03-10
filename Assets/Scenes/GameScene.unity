@@ -572,8 +572,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cef25692b246176438a03f6d518898d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToSpawn: 1
-  pipe: {fileID: 912852780069247593, guid: e1ad5cff2747b12429212e7ad7153296, type: 3}
+  timeToSpawn: 1.6
+  pipe1: {fileID: 912852780069247593, guid: e1ad5cff2747b12429212e7ad7153296, type: 3}
+  pipe2: {fileID: 1080467755543822814, guid: 6caba7b4c1207bd47beb9f7f9d912a90, type: 3}
   height: 0.3
 --- !u!4 &1920997340
 Transform:
@@ -655,6 +656,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8658263929307764551, guid: 6caba7b4c1207bd47beb9f7f9d912a90,
+        type: 3}
+      propertyPath: moveSpead
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6caba7b4c1207bd47beb9f7f9d912a90, type: 3}
