@@ -14,23 +14,33 @@ public class PipeSpawner : MonoBehaviour
     private int pipeNum = 0;
 
     // Start is called before the first frame update
-    IEnumerator Start()
+    void Start()
+    {
+
+    }
+
+    IEnumerator SpawnPipe()
     {
         while (true)
         {
-            if(pipeNum == 0)
+            if (pipeNum == 0)
             {
                 CreateAndMoves(pipe1);
-          
+
             }
-            else if(pipeNum == 1)
+            else if (pipeNum == 1)
             {
                 CreateAndMoves(pipe2);
-             
+
             }
             yield return new WaitForSeconds(timeToSpawn);
-            pipeNum = 1 - pipeNum; 
+            pipeNum = 1 - pipeNum;
         }
+    } 
+
+    public void StartSpawning()
+    {
+        spawnPipesCoroutine = StartCoroutine(SpawnPipe());
     }
 
     private void CreateAndMoves(GameObject pipe)
