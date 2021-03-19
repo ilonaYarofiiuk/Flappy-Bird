@@ -5,6 +5,7 @@ using UnityEngine;
 public class BridFly : MonoBehaviour
 {
     [SerializeField] float velocity = 1f;
+    [SerializeField] Manager manager;
     Rigidbody2D rb;
 
     private bool isAleadyTouched = false;
@@ -24,6 +25,7 @@ public class BridFly : MonoBehaviour
             isAleadyTouched = true;
             rb.isKinematic = false;
             FindObjectOfType<PipeSpawner>().StartSpawning();
+            manager.DisableStartUI();
             rb.velocity = Vector2.up  * velocity;
         }
         if (Input.GetMouseButtonDown(0) && transform.position.y < 1.1f)
@@ -34,7 +36,7 @@ public class BridFly : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        FindObjectOfType<Manager>().RestartGame();
+        manager.GameOver();
     }
 
 }
