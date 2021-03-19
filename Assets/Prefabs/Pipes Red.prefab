@@ -275,6 +275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6102068688704678417}
   - component: {fileID: 5051426122800414433}
+  - component: {fileID: 573509427174200924}
   m_Layer: 0
   m_Name: ScoreEliment
   m_TagString: Untagged
@@ -322,3 +323,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.25461447, y: 0.7063637}
   m_EdgeRadius: 0
+--- !u!114 &573509427174200924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5421359661279660265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaa13e3238e19ca4b82771c107e38c16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
