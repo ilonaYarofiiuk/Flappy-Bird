@@ -335,3 +335,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaa13e3238e19ca4b82771c107e38c16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  addScoreSound: {fileID: 8300000, guid: dd3166b97e3a9e9498797de47c2845c6, type: 3}
+  addScoreSoundVolume: 0.3

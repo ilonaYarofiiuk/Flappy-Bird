@@ -586,6 +586,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796f3135fd4799145b7dad85ef5d0dcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathSound: {fileID: 8300000, guid: eed062711d6ead141b150b9c0f8afcda, type: 3}
+  deathSoundVolume: 0.5
+  flyUpSound: {fileID: 8300000, guid: 13dc7b967cf5a5a439700770fe013dea, type: 3}
+  flyUpSoundVolume: 0.2
+  wingsFlappSound: {fileID: 8300000, guid: 3c3edac0641ad52489234e61913df0ae, type: 3}
+  wingsFlappSoundVolume: 0.1
   velocity: 1.4
   manager: {fileID: 122490631}
 --- !u!70 &555398421
